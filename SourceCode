@@ -84,7 +84,7 @@ Public Class Form1
         PictureBox1.Image = New Bitmap(New IO.MemoryStream(New System.Net.WebClient().DownloadData("https://api.skype.com/users/" + TextBox4.Text + "/profile/avatar")))
 
         Dim webClient As New System.Net.WebClient
-        Dim Resolve As String = webClient.DownloadString("http://api.predator.wtf/resolver/?arguments=" + TextBox4.Text)
+        Dim Resolve As String = webClient.DownloadString("apihere" + TextBox4.Text)
 
         Label25.Text = (Resolve)
 
